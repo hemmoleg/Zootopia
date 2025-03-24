@@ -50,6 +50,7 @@
 
         .card__title {
           color: @gray-dark;
+          margin-bottom: 1rem;
           font-size: 1.25rem;
           font-weight: 300;
           letter-spacing: 2px;
@@ -60,32 +61,36 @@
           flex: 1 1 auto;
           font-size: 0.95rem;
           line-height: 2;
-          margin-bottom: 1.25rem;
+
+          ul{
+          list-style: none;
+          margin: 0;
+          padding: 0;
         }
         </style>
     </head>
     <body>
         <h1>My Animal Repository</h1>
         <ul class="cards">
-            <li class='cards__item'><div class='card__title'>Name: American Foxhound</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> North-America<br/><strong>Type:</strong> Hound<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Arctic Fox</div><p class='card__text'><strong>Diet:</strong> Carnivore<br/><strong>Locations:</strong> Eurasia<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Cross Fox</div><p class='card__text'><strong>Diet:</strong> Carnivore<br/><strong>Locations:</strong> North-America<br/><strong>Type:</strong> mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Darwin’s fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> South-America<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: English Foxhound</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Europe<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Fennec Fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Africa<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Fox</div><p class='card__text'><strong>Diet:</strong> Carnivore<br/><strong>Locations:</strong> Africa<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Fox Snakes</div><p class='card__text'><strong>Diet:</strong> Carnivore<br/><strong>Locations:</strong> North-America<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Fox Squirrel</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Central-America<br/><strong>Type:</strong> rodent<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Fox Terrier</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Europe<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Golden-Crowned Flying Fox</div><p class='card__text'><strong>Diet:</strong> Herbivore<br/><strong>Locations:</strong> Asia<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Gray Fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Central-America<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Kit Fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Central-America<br/><strong>Type:</strong> mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Marble Fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> North-America<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Red Fox</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Africa<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Smooth Fox Terrier</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Europe<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Tibetan Fox</div><p class='card__text'><strong>Diet:</strong> Carnivore<br/><strong>Locations:</strong> Asia<br/><strong>Type:</strong> Mammal<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Toy Fox Terrier</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> North-America<br/></p></li>
-<li class='cards__item'><div class='card__title'>Name: Wire Fox Terrier</div><p class='card__text'><strong>Diet:</strong> Omnivore<br/><strong>Locations:</strong> Europe<br/></p></li>
+            <li class='cards__item'><div class='card__title'>Name: American Foxhound</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> North-America</li><li><strong>Type:</strong> Hound</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Arctic Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Carnivore</li><li><strong>Locations:</strong> Eurasia</li><li><strong>Type:</strong> Mammal</li><li><strong>Top speed:</strong> 30 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Cross Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Carnivore</li><li><strong>Locations:</strong> North-America</li><li><strong>Type:</strong> mammal</li><li><strong>Group behavior:</strong> Solitary</li><li><strong>Top speed:</strong> 31 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Darwin’s fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> South-America</li><li><strong>Type:</strong> Mammal</li><li><strong>Group behavior:</strong> Solitary</li><li><strong>Top speed:</strong> 45 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: English Foxhound</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Europe</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Fennec Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Africa</li><li><strong>Group behavior:</strong> Sociable</li><li><strong>Top speed:</strong> 25 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Carnivore</li><li><strong>Locations:</strong> Africa</li><li><strong>Type:</strong> Mammal</li><li><strong>Top speed:</strong> 29 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Fox Snakes</div><div class='card__text'><ul><li><strong>Diet:</strong> Carnivore</li><li><strong>Locations:</strong> North-America</li><li><strong>Group behavior:</strong> Solitary</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Fox Squirrel</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Central-America</li><li><strong>Type:</strong> rodent</li><li><strong>Group behavior:</strong> Social</li><li><strong>Top speed:</strong> 17 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Fox Terrier</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Europe</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Golden-Crowned Flying Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Herbivore</li><li><strong>Locations:</strong> Asia</li><li><strong>Group behavior:</strong> Group</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Gray Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Central-America</li><li><strong>Type:</strong> Mammal</li><li><strong>Group behavior:</strong> SolitaryFamily units</li><li><strong>Top speed:</strong> 28 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Kit Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Central-America</li><li><strong>Type:</strong> mammal</li><li><strong>Group behavior:</strong> Solitary</li><li><strong>Top speed:</strong> 25 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Marble Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> North-America</li><li><strong>Type:</strong> Mammal</li><li><strong>Group behavior:</strong> Solitary</li><li><strong>Top speed:</strong> 30 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Red Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Africa</li><li><strong>Group behavior:</strong> Family units</li><li><strong>Top speed:</strong> 31 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Smooth Fox Terrier</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Europe</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Tibetan Fox</div><div class='card__text'><ul><li><strong>Diet:</strong> Carnivore</li><li><strong>Locations:</strong> Asia</li><li><strong>Type:</strong> Mammal</li><li><strong>Group behavior:</strong> Pair</li><li><strong>Top speed:</strong> 44 mph</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Toy Fox Terrier</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> North-America</li></ul></div></li>
+<li class='cards__item'><div class='card__title'>Name: Wire Fox Terrier</div><div class='card__text'><ul><li><strong>Diet:</strong> Omnivore</li><li><strong>Locations:</strong> Europe</li></ul></div></li>
 
         </ul>
     </body>
