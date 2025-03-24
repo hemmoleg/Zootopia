@@ -12,23 +12,22 @@ def load_html(file_path):
 
 
 def create_animal_data_html(animal_data):
-    animal_data_string = "<ul class='cards'>"
+    animal_data_string = ""
 
     for animal in animal_data:
         animal_data_string += "<li class='cards__item'>"
-        animal_data_string += f"Name: {animal['name']}<br/>\n"
+        animal_data_string += f"<div class='card__title'>Name: {animal['name']}</div>"
+        animal_data_string += "<p class='card__text'>"
 
         if 'characteristics' in animal and 'diet' in animal['characteristics']:
-            animal_data_string += f"Diet: {animal['characteristics']['diet']}<br/>\n"
+            animal_data_string += f"<strong>Diet:</strong> {animal['characteristics']['diet']}<br/>"
 
-        animal_data_string += f"Locations {animal['locations'][0]}<br/>\n"
+        animal_data_string += f"<strong>Locations:</strong> {animal['locations'][0]}<br/>"
 
         if 'characteristics' in animal and 'type' in animal['characteristics']:
-            animal_data_string += f"Type: {animal['characteristics']['type']}<br/>\n"
+            animal_data_string += f"<strong>Type:</strong> {animal['characteristics']['type']}<br/>"
 
-        animal_data_string += "</li>\n"
-
-    animal_data_string += "</ul>"
+        animal_data_string += "</p></li>\n"
 
     return animal_data_string
 
@@ -45,6 +44,9 @@ def main():
 
     html = str(html).replace("__REPLACE_ANIMALS_INFO__", animal_data_string)
     write_html(html)
+
+    print(animal_data_string)
+    print(html)
 
 
 if __name__ == '__main__':
